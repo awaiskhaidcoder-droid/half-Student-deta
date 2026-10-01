@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <style>
+        div{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+             
+        }
+        td{
+            width: 150px;
+           
+        }
+        button{
+            background-color: red;
+            color: white;
+            width: 80px;
+            cursor:grab;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Students</h1>
+    <table border="1">
+        <tr>
+           <td><h1>Name</h1></td>
+           <td><h1>Class</h1></td>
+           <td><h1>Age</h1></td>
+        </tr>
+        <% for(let i=0;i<result.length;i++){ %>
+        <tr id=${i}>
+            <td><%=result[i].Name %></td>
+            <td><%=result[i].class %></td>
+            <td><%=result[i].age %></td>
+            <td><button>Delete</button></td>
+
+        </tr >
+        <%} %>
+    </table>
+   </div> 
+</body>
+</html>
